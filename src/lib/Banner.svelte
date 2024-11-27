@@ -15,7 +15,7 @@
 
 <section>
   <div class="container">
-    <div>Hello, je suis</div>
+    <div>Bonjour, je suis</div>
     <h1>Céline Ung</h1>
     <h2>Développeuse web fullstack</h2>
     <p class="description">
@@ -35,7 +35,7 @@
       </a>
     </p>
     <a class="navigate-down" href="#work-references" on:click={smoothAnchorClick}>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" role="img" aria-label="Aller à la section suivante">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6" role="img" aria-label="Aller à la section suivante">
         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
       </svg>
     </a>
@@ -51,27 +51,21 @@
   section {
     background-color: var(--primary-color);
     color: #fff;
-    margin: auto;
+		height: calc(100dvh - 50px);
+		max-height: 750px;
+		display: flex;
+		margin-bottom: 3rem;
+		padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
   }
 
   .container {
-    margin: auto;
-    padding: 2rem var(--container-padding) 0 var(--container-padding);
+    padding: 0 var(--container-padding);
     max-width: var(--container-max-width);
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    @media (min-width: 768px) {
-      padding-top: 7rem;
-    }
-
-    span {
-      font-size: 0.9rem;
-      font-weight: 300;
-      letter-spacing: 0.03rem;
-      color: #b9b9b9;
-    }
 
     h1 {
       margin: 3px 0;
@@ -80,14 +74,23 @@
     }
 
     h2 {
-      margin: 32px 0;
+      margin: 20px 0;
       font-size: 2rem;
       text-align: center;
+
+      @media (min-width: 768px) {
+        margin-top: 32px;
+      }
     }
 
     .description {
       text-align: center;
       line-height: 1.5rem;
+			margin: 8px 0;
+
+      @media (min-width: 768px) {
+        margin: 16px 0;
+      }
     }
 
     .social-medias {
@@ -112,11 +115,10 @@
     &.navigate-down {
       @extend %icon;
       margin-top: 2rem;
-      margin-bottom: 3rem;
-
+      width: 2.25rem;
 
       @media (min-width: 768px) {
-        margin-top: 6rem;
+        margin-top: 5rem;
       }
     }
   }

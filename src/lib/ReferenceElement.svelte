@@ -51,7 +51,7 @@
 </script>
 
 <div class="work-reference">
-  <img class="logo" src={referenceData[name].img} alt="Logo de {name}">
+  <img class="logo" src={referenceData[name].img} alt={name}>
   <div class="links">
     {#if referenceData[name].website}
       <a class="icon" href={referenceData[name].website} target="_blank" rel="noopener noreferrer" id="{name}-website">
@@ -69,13 +69,16 @@
 
 <style lang="scss">
   .work-reference {
-    width: 50%;
+    width: 100%;
     height: 150px;
-    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: 576px) {
+      width: 50%;
+    }
 
     @media (min-width: 768px) {
       width: 33%;
