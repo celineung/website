@@ -7,13 +7,13 @@
   <h1>Mes références</h1>
   <p>Lorsqu'ils sont publics, les liens d'accès aux sites et bases de code des projets auxquels j'ai participé s'affichent sous les logos des sociétés.</p>
   <div class="work-references_content">
-    <ReferenceElement name="zenika"/>
-    <ReferenceElement name="cision"/>
-    <ReferenceElement name="bnpparibas"/>
-    <ReferenceElement name="jcdecaux"/>
-    <ReferenceElement name="pix"/>
-    <ReferenceElement name="invivo"/>
     <ReferenceElement name="immersion-facilitee"/>
+    <ReferenceElement name="invivo"/>
+    <ReferenceElement name="pix"/>
+    <ReferenceElement name="jcdecaux"/>
+    <ReferenceElement name="bnpparibas"/>
+    <ReferenceElement name="cision"/>
+    <ReferenceElement name="zenika"/>
   </div>
 </section>
 
