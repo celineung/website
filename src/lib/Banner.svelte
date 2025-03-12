@@ -23,7 +23,7 @@
       <a href="https://aycandoo.fr/" target="_blank" rel="noopener noreferrer" id="aycandoo">AYCANDO</a>.
     </p>
     <p class="description">
-      Vous avez une idée ou un projet de site ou d'application web ? Je peux vous accompagner aussi bien dans sa réalisation que sa maintenance.<br><a href="https://aycandoo.fr/contact/" target="_blank" rel="noopener noreferrer"  class="cu-contact">Prenez contact avec notre équipe AYCANDOO</a>.
+      Vous avez une idée ou un projet de site ou d'application web ? Je peux vous accompagner aussi bien dans sa réalisation que sa maintenance.<br><a href="mailto:celine.ung.pro@gmail.com" class="cu-contact">Prenons contact: celine.ung.pro@gmail.com.</a>
     </p>
     <p class="social-medias">
       <a href="https://www.linkedin.com/in/celine-ung" target="_blank" rel="noopener noreferrer" id="cu-linkedin"><img src={LinkedInIcon} alt="Profile LinkedIn de Céline"></a>
