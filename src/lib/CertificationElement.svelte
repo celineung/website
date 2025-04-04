@@ -22,12 +22,14 @@
 
 <style lang="scss">
 	article {
+    background-color: #fff;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
 		padding: 30px 20px;
+    width: 250px;
 
 		img {
 			height: 100px;

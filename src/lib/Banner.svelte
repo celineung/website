@@ -54,7 +54,6 @@
 		height: calc(100dvh - 50px);
 		max-height: 750px;
 		display: flex;
-		margin-bottom: 3rem;
 		padding-bottom: 50px;
     align-items: center;
     justify-content: center;
