@@ -1,29 +1,21 @@
 <script lang="ts">
-	import CsmImg from "$lib/assets/certifications/csm.webp";
-
-	export let name: ReferenceName;
-
-	type ReferenceName = "CSM";
-
-	const certificationData: Record<ReferenceName, { img: string, website: string, description: string }> = {
-		CSM: {
-			img: CsmImg,
-			website: "https://www.scrumalliance.org/",
-			description: "Le ScrumMaster agit en tant que leader au service de l’équipe (servant leader) en aidant l’équipe et l’organisation à faire le meilleur usage de Scrum."
-		}
-	}
-
+	export let name: string;
+	export let img: string;
+	export let by: string;
+	export let description: string;
 </script>
 
 <article>
-	<img src={certificationData[name].img} alt={name}/>
-	<p>{certificationData[name].description}</p>
+  <img src={img} alt="Délivré par {by}"/>
+  <h2>{name}</h2>
+  <p>{description}</p>
 </article>
 
 <style lang="scss">
 	article {
     background-color: #fff;
 		display: flex;
+    margin: 1rem;
 		flex-direction: column;
 		align-items: center;
 		width: 300px;
@@ -36,7 +28,8 @@
 			width: auto;
 		}
 
-		p {
+		h2, p {
+      margin-bottom: 0;
 			text-align: center;
 		}
 	}

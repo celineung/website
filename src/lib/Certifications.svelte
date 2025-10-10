@@ -1,11 +1,32 @@
 <script lang="ts">
-	import CertificationElement from '$lib/CertificationElement.svelte';
+import A11YAudit from "$lib/assets/certifications/a11y-audit.svg";
+import CsmImg from "$lib/assets/certifications/csm.webp";
+import CertificationElement from "$lib/CertificationElement.svelte";
+
+type Certification = {
+	name: string;
+	by: string;
+	img: string;
+	description: string;
+};
+
+const certificationData: Certification[] = [
+	{
+		name: "CSM",
+		by: "Scrum Alliance",
+		img: CsmImg,
+		description:
+			"J’accompagne les équipes dans l’adoption des méthodes agiles, en favorisant la collaboration, l’autonomie et l’amélioration continue.",
+	},
+];
 </script>
 
 <section id="certifications">
 	<h1>Mes certifications</h1>
 	<div class="certifications__content">
-		<CertificationElement name="CSM" />
+    {#each certificationData as certification}
+      <CertificationElement name={certification.name} img={certification.img} description={certification.description} by={certification.by} />
+    {/each}
 	</div>
 </section>
 
@@ -22,5 +43,7 @@
 
 	.certifications__content {
 		margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
 	}
 </style>
