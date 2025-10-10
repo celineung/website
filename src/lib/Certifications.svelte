@@ -12,11 +12,18 @@ type Certification = {
 
 const certificationData: Certification[] = [
 	{
-		name: "CSM",
+		name: "CSM - Certified Scrum Master",
 		by: "Scrum Alliance",
 		img: CsmImg,
 		description:
 			"J’accompagne les équipes dans l’adoption des méthodes agiles, en favorisant la collaboration, l’autonomie et l’amélioration continue.",
+	},
+	{
+		name: "RGAA : auditer l’accessibilité numérique des sites web",
+		by: "Access42",
+		img: A11YAudit,
+		description:
+			"J’évalue la conformité des sites web, identifie les points de blocage et propose des solutions concrètes pour une expérience inclusive.",
 	},
 ];
 </script>
@@ -44,6 +51,11 @@ const certificationData: Certification[] = [
 	.certifications__content {
 		margin: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
 	}
 </style>
