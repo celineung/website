@@ -19,8 +19,7 @@
     <h1>Céline Ung</h1>
     <h2>Développeuse web fullstack</h2>
     <p class="description">
-      Depuis 2015, j’accompagne mes clients dans la réalisation de leurs projets web. J'ai récemment rejoint
-      <a href="https://aycandoo.fr/" target="_blank" rel="noopener noreferrer" id="aycandoo">AYCANDO</a>.
+      Depuis 2015, j’accompagne mes clients dans la réalisation de leurs projets web.
     </p>
     <p class="description">
       Vous avez une idée ou un projet de site ou d'application web ? Je peux vous accompagner aussi bien dans sa réalisation que sa maintenance.<br><a href="mailto:celine.ung.pro@gmail.com" class="cu-contact">Prenons contact: celine.ung.pro@gmail.com.</a>
@@ -28,7 +27,7 @@
     <p class="social-medias">
       <a href="https://www.linkedin.com/in/celine-ung" target="_blank" rel="noopener noreferrer" id="cu-linkedin"><img src={LinkedInIcon} alt="Profile LinkedIn de Céline"></a>
       <a href="https://github.com/celineung" target="_blank" rel="noopener noreferrer" id="cu-github"><img src={GithubIcon} alt="Profile Github de Céline"></a>
-      <a href="https://aycandoo.fr/contact/" target="_blank" rel="noopener noreferrer" class="cu-contact">
+      <a href="mailto:celine.ung.pro@gmail.com" class="cu-contact">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 21 20" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" role="img" aria-label="Prise de contact par mail">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
         </svg>
